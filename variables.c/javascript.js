@@ -5,5 +5,4 @@ function calculate_age(dob) {
     return Math.abs(age_dt.getUTCFullYear() - 1970);
 }
 
-console.log(calculate_age(new Date(1975, 6, 75)));
-
+console.log(calculate_age(new Date(1975, 6, 25)));
