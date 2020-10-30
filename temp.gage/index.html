@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>Fahrenheit to Celcius Temperature Converter</title>
+<body>
+
+<h2>Temp Gage Converter</h2>
+<p>Index a temp in the Fahrenheit box to convert it into Celsius:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+<p>Index a temp in the Celsius box to convert it into Fahrenheit:</p>
+
+<p>
+  <label>Celcius</label>
+  <input id="inputCelcius" type="number" placeholder="Celcius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahenheit"></span></p>
+
+<script>
+  function temperatureConverter(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("outputFahrenheit).innerHTML=(valNum*1.8)+32;
+  }
+  </script>
+
+
+
+</body>
+</html>
